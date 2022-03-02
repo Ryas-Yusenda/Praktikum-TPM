@@ -28,4 +28,4 @@
 # Link Tugas:
 
 - `Tugas 1 - Tugas Layouting`<br />
-  **Link Github** : _[View](https://github.com/Ryas-Yusenda/Praktikum-Teknologi-dan-Pemrograman-Mobile/tree/main/Topic%202%20-%20Layouting)_<br />
+  **Link Github** : _[View](https://github.com/Ryas-Yusenda/Praktikum-Teknologi-dan-Pemrograman-Mobile/tree/main/topic_2_layouting)_<br />
