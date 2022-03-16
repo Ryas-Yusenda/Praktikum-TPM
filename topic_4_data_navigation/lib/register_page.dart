@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'profile_page.dart';
+import 'login_page.dart';
 
 class RegisterPage extends StatefulWidget {
-  final String username;
+  // final String username;
 
-  const RegisterPage({Key? key, required this.username}) : super(key: key);
+  // const RegisterPage({Key? key, required this.username}) : super(key: key);
+  const RegisterPage({Key? key}) : super(key: key);
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();
@@ -21,6 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xfff8faf8),
+        automaticallyImplyLeading: false,
         title: const Text(
           'Register',
           style: TextStyle(color: Colors.blue),
@@ -151,7 +154,12 @@ class _RegisterPageState extends State<RegisterPage> {
     return TextButton(
       child: const Text("Login",
           style: TextStyle(fontSize: 16, color: Colors.black54)),
-      onPressed: () => Navigator.pop(context), // Respon ketika button ditekan
+      onPressed: () {
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) {
+          return LoginPage();
+        }));
+      }, // Respon ketika button ditekan
     );
   }
 }

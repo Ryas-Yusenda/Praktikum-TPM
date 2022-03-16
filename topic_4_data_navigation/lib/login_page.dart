@@ -145,8 +145,9 @@ class _LoginPageState extends State<LoginPage> {
       child: const Text("Register",
           style: TextStyle(fontSize: 16, color: Colors.black54)),
       onPressed: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return RegisterPage(username: _email.text);
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) {
+          return const RegisterPage();
         }));
       }, // Respon ketika button ditekan
     );
