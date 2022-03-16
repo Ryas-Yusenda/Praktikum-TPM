@@ -113,6 +113,8 @@ class _LoginPageState extends State<LoginPage> {
             setState(() {
               text = "Login Success";
               isLoginSuccess = true;
+              // ignore: todo
+              // TODO: Navigator Push Replacement
               Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return const ProfilePage(
                   nama: "Ryas Putra Yusenda Dalimunthe",
@@ -144,6 +146,8 @@ class _LoginPageState extends State<LoginPage> {
     return TextButton(
       child: const Text("Register",
           style: TextStyle(fontSize: 16, color: Colors.black54)),
+      // ignore: todo
+      // TODO: Navigator Push Replacement
       onPressed: () {
         Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) {

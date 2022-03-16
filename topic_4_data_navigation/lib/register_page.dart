@@ -133,6 +133,8 @@ class _RegisterPageState extends State<RegisterPage> {
           );
           ScaffoldMessenger.of(context).showSnackBar(snackBar);
         } else {
+          // ignore: todo
+          // TODO: Navigator Push Replacement
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return ProfilePage(
               nama: _namaLengkap,
@@ -154,6 +156,8 @@ class _RegisterPageState extends State<RegisterPage> {
     return TextButton(
       child: const Text("Login",
           style: TextStyle(fontSize: 16, color: Colors.black54)),
+      // ignore: todo
+      // TODO: Navigator Push Replacement
       onPressed: () {
         Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) {
